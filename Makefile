@@ -9,11 +9,8 @@ build:
 install:
 	./gradlew clean install
 
-#run-dist:
-#	./build/install/java-package/bin/java-package
-
-run-dist:
-	./app/build/classes/java/main/hexlet/code/App
+run-dist: install
+	./app/build/install/app/bin/app
 
 run:
 	./gradlew run
